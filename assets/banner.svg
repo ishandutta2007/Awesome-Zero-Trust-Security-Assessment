@@ -1,0 +1,179 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#030712" />
+      <stop offset="50%" stop-color="#0B132B" />
+      <stop offset="100%" stop-color="#111827" />
+    </linearGradient>
+
+    <linearGradient id="cyan-purple" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F2FE" />
+      <stop offset="50%" stop-color="#4FACFE" />
+      <stop offset="100%" stop-color="#7F00FF" />
+    </linearGradient>
+
+    <linearGradient id="badge-glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F2FE" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#7F00FF" stop-opacity="0.1" />
+    </linearGradient>
+
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="subtle-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes pulseOrb {
+      0%, 100% { transform: scale(1) translate(0, 0); opacity: 0.25; }
+      50% { transform: scale(1.15) translate(20px, -15px); opacity: 0.45; }
+    }
+    @keyframes pulseShield {
+      0%, 100% { transform: scale(1); filter: drop-shadow(0 0 10px rgba(0, 242, 254, 0.4)); }
+      50% { transform: scale(1.04); filter: drop-shadow(0 0 25px rgba(0, 242, 254, 0.85)); }
+    }
+    @keyframes dashCycle {
+      to { stroke-dashoffset: -80; }
+    }
+    @keyframes radarSweep {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    .orb-glow {
+      transform-origin: 980px 180px;
+      animation: pulseOrb 8s ease-in-out infinite;
+    }
+    .shield-icon {
+      transform-origin: 980px 180px;
+      animation: pulseShield 4s ease-in-out infinite;
+    }
+    .data-stream {
+      stroke-dasharray: 8, 12;
+      animation: dashCycle 3s linear infinite;
+    }
+    .radar-line {
+      transform-origin: 980px 180px;
+      animation: radarSweep 10s linear infinite;
+    }
+  </style>
+
+  <!-- Background Base -->
+  <rect width="1200" height="360" rx="16" fill="url(#bg-grad)" />
+  <rect width="1196" height="356" x="2" y="2" rx="14" fill="none" stroke="url(#cyan-purple)" stroke-width="1.5" stroke-opacity="0.6" />
+
+  <!-- Background Grid Lines -->
+  <g opacity="0.1" stroke="#4FACFE" stroke-width="1">
+    <line x1="60" y1="0" x2="60" y2="360" />
+    <line x1="180" y1="0" x2="180" y2="360" />
+    <line x1="300" y1="0" x2="300" y2="360" />
+    <line x1="420" y1="0" x2="420" y2="360" />
+    <line x1="540" y1="0" x2="540" y2="360" />
+    <line x1="660" y1="0" x2="660" y2="360" />
+    <line x1="780" y1="0" x2="780" y2="360" />
+    <line x1="900" y1="0" x2="900" y2="360" />
+    <line x1="1020" y1="0" x2="1020" y2="360" />
+    <line x1="1140" y1="0" x2="1140" y2="360" />
+    <line x1="0" y1="60" x2="1200" y2="60" />
+    <line x1="0" y1="120" x2="1200" y2="120" />
+    <line x1="0" y1="180" x2="1200" y2="180" />
+    <line x1="0" y1="240" x2="1200" y2="240" />
+    <line x1="0" y1="300" x2="1200" y2="300" />
+  </g>
+
+  <!-- Animated Ambient Orbs (Background Only) -->
+  <circle class="orb-glow" cx="980" cy="180" r="130" fill="#00F2FE" />
+  <circle class="orb-glow" cx="1020" cy="150" r="90" fill="#7F00FF" style="animation-delay: -3s;" />
+
+  <!-- Animated Network Verification Nodes (Right Side Graphic) -->
+  <g id="dynamic-graphic">
+    <!-- Radar Rings -->
+    <circle cx="980" cy="180" r="140" fill="none" stroke="#4FACFE" stroke-width="1" opacity="0.2" />
+    <circle cx="980" cy="180" r="105" fill="none" stroke="#00F2FE" stroke-width="1" opacity="0.3" stroke-dasharray="4, 6" />
+    <circle cx="980" cy="180" r="70" fill="none" stroke="#7F00FF" stroke-width="1.5" opacity="0.4" />
+
+    <!-- Radar Sweep Line -->
+    <line class="radar-line" x1="980" y1="180" x2="980" y2="40" stroke="url(#cyan-purple)" stroke-width="2" opacity="0.6" />
+
+    <!-- Connecting Verification Streams -->
+    <line class="data-stream" x1="780" y1="90" x2="980" y2="180" stroke="#00F2FE" stroke-width="1.5" opacity="0.7" />
+    <line class="data-stream" x1="780" y1="270" x2="980" y2="180" stroke="#7F00FF" stroke-width="1.5" opacity="0.7" />
+    <line class="data-stream" x1="1120" y1="90" x2="980" y2="180" stroke="#4FACFE" stroke-width="1.5" opacity="0.7" />
+    <line class="data-stream" x1="1120" y1="270" x2="980" y2="180" stroke="#00F2FE" stroke-width="1.5" opacity="0.7" />
+
+    <!-- Exterior Satellite Nodes -->
+    <g transform="translate(780, 90)" filter="url(#subtle-glow)">
+      <rect x="-40" y="-16" width="80" height="32" rx="8" fill="#0B132B" stroke="#00F2FE" stroke-width="1.5" />
+      <text text-anchor="middle" y="5" font-family="ui-monospace, monospace, sans-serif" font-size="12" font-weight="bold" fill="#00F2FE">IDENTITY</text>
+    </g>
+    <g transform="translate(780, 270)" filter="url(#subtle-glow)">
+      <rect x="-40" y="-16" width="80" height="32" rx="8" fill="#0B132B" stroke="#7F00FF" stroke-width="1.5" />
+      <text text-anchor="middle" y="5" font-family="ui-monospace, monospace, sans-serif" font-size="12" font-weight="bold" fill="#C084FC">NETWORK</text>
+    </g>
+    <g transform="translate(1120, 90)" filter="url(#subtle-glow)">
+      <rect x="-40" y="-16" width="80" height="32" rx="8" fill="#0B132B" stroke="#4FACFE" stroke-width="1.5" />
+      <text text-anchor="middle" y="5" font-family="ui-monospace, monospace, sans-serif" font-size="12" font-weight="bold" fill="#38BDF8">DEVICES</text>
+    </g>
+    <g transform="translate(1120, 270)" filter="url(#subtle-glow)">
+      <rect x="-40" y="-16" width="80" height="32" rx="8" fill="#0B132B" stroke="#00F2FE" stroke-width="1.5" />
+      <text text-anchor="middle" y="5" font-family="ui-monospace, monospace, sans-serif" font-size="12" font-weight="bold" fill="#00F2FE">DATA</text>
+    </g>
+
+    <!-- Central Shield & Keyhole -->
+    <g class="shield-icon">
+      <path d="M980 120 L1025 140 C1025 190 980 230 980 240 C980 230 935 190 935 140 Z" 
+            fill="#0F172A" stroke="url(#cyan-purple)" stroke-width="3.5" />
+      <circle cx="980" cy="168" r="9" fill="#00F2FE" filter="url(#glow)" />
+      <path d="M976 172 L984 172 L987 195 L973 195 Z" fill="#00F2FE" />
+    </g>
+  </g>
+
+  <!-- Left Foreground Typography (Clear, Unobstructed, High Contrast) -->
+  <g id="text-content" transform="translate(80, 0)">
+    <!-- Category Tag / Pill -->
+    <g transform="translate(0, 68)">
+      <rect width="280" height="28" rx="14" fill="url(#badge-glow)" stroke="#00F2FE" stroke-width="1.2" />
+      <circle cx="14" cy="14" r="4.5" fill="#00F2FE" filter="url(#subtle-glow)" />
+      <text x="28" y="18" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#E0F2FE" letter-spacing="1.2">ENTERPRISE SECURITY ECOSYSTEM</text>
+    </g>
+
+    <!-- Main Title -->
+    <text x="0" y="146" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="42" font-weight="900" fill="#FFFFFF" letter-spacing="-0.5">
+      Awesome Zero Trust
+    </text>
+    <text x="0" y="198" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="42" font-weight="900" fill="url(#cyan-purple)" letter-spacing="-0.5">
+      Security Assessment
+    </text>
+
+    <!-- Subtitle / Value Proposition -->
+    <text x="0" y="246" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="400" fill="#94A3B8">
+      Curated Posture Scoring, Tenant Audits, ZTNA Validation &amp; Continuous Verification
+    </text>
+
+    <!-- Technology Keywords / Features -->
+    <g transform="translate(0, 276)">
+      <rect x="0" y="0" width="130" height="24" rx="6" fill="#1E293B" stroke="#334155" stroke-width="1" />
+      <text x="65" y="16" text-anchor="middle" font-family="ui-monospace, monospace, sans-serif" font-size="11" font-weight="600" fill="#38BDF8">🛡️ NIST 800-207</text>
+
+      <rect x="142" y="0" width="120" height="24" rx="6" fill="#1E293B" stroke="#334155" stroke-width="1" />
+      <text x="202" y="16" text-anchor="middle" font-family="ui-monospace, monospace, sans-serif" font-size="11" font-weight="600" fill="#C084FC">⚡ CISA ZTMM</text>
+
+      <rect x="274" y="0" width="125" height="24" rx="6" fill="#1E293B" stroke="#334155" stroke-width="1" />
+      <text x="336" y="16" text-anchor="middle" font-family="ui-monospace, monospace, sans-serif" font-size="11" font-weight="600" fill="#34D399">🔍 POSTURE SCAN</text>
+
+      <rect x="411" y="0" width="135" height="24" rx="6" fill="#1E293B" stroke="#334155" stroke-width="1" />
+      <text x="478" y="16" text-anchor="middle" font-family="ui-monospace, monospace, sans-serif" font-size="11" font-weight="600" fill="#F472B6">🚀 SAAS &amp; OSS</text>
+    </g>
+  </g>
+</svg>
