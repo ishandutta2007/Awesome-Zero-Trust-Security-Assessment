@@ -1,6 +1,6 @@
 <div align="center">
 
-<a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a> <a href="https://github.com/ishandutta2007/Awesome-Zero-Trust-Security-Assessment/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Zero-Trust-Security-Assessment?style=social" alt="GitHub stars" /></a> <a href="https://github.com/ishandutta2007/Awesome-Zero-Trust-Security-Assessment/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Zero-Trust-Security-Assessment?style=social" alt="GitHub forks" /></a> <a href="https://github.com/ishandutta2007/Awesome-Zero-Trust-Security-Assessment/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Zero-Trust-Security-Assessment?style=flat-square" alt="License" /></a> <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+<a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a> <a href="https://github.com/ishandutta2007/Awesome-Zero-Trust-Security-Assessment/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Zero-Trust-Security-Assessment?style=social" alt="GitHub_Stars" /></a> <a href="https://github.com/ishandutta2007/Awesome-Zero-Trust-Security-Assessment/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Zero-Trust-Security-Assessment?style=social" alt="GitHub forks" /></a> <a href="https://github.com/ishandutta2007/Awesome-Zero-Trust-Security-Assessment/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Zero-Trust-Security-Assessment?style=flat-square" alt="License" /></a> <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
 
 <br/><br/>
 
@@ -85,7 +85,7 @@ All repositories below are **sorted in descending order by GitHub stargazer coun
 
 Tools that scan, audit, and benchmark your existing identity systems, cloud tenants, and multi-vendor configurations against NIST SP 800-207, CISA ZTMM, CIS benchmarks, and zero-trust guidelines.
 
-| Project & Stars | Focus & Pillar | Description |
+| Project & GitHub_Stars | Focus & Pillar | Description |
 | :--- | :--- | :--- |
 | **[Prowler](https://github.com/prowler-cloud/prowler)** <br/> [![Prowler Stars](https://img.shields.io/github/stars/prowler-cloud/prowler?style=social&color=white)](https://github.com/prowler-cloud/prowler/stargazers) | Multi-Cloud Tenant & Zero Trust Audit | Comprehensive open-source security tool for AWS, Azure, GCP, and Kubernetes. Includes hundreds of automated controls mapped directly to NIST SP 800-53, CIS Benchmarks, and CISA Zero Trust Maturity Model guidelines with HTML/JSON reporting. |
 | **[ScoutSuite](https://github.com/nccgroup/ScoutSuite)** <br/> [![ScoutSuite Stars](https://img.shields.io/github/stars/nccgroup/ScoutSuite?style=social&color=white)](https://github.com/nccgroup/ScoutSuite/stargazers) | Multi-Cloud Posture Audit | Open-source multi-cloud security auditing tool by NCC Group. Gathers configuration data via cloud APIs to flag over-privileged IAM permissions, public storage access, and unsegmented network resources. |
@@ -99,7 +99,7 @@ Tools that scan, audit, and benchmark your existing identity systems, cloud tena
 
 Engines and proxies that implement zero-trust access control, kernel-level eBPF microsegmentation, and dynamic authorization. These projects provide the underlying enforcement plane measured during posture audits.
 
-| Project & Stars | Focus & Pillar | Description |
+| Project & GitHub_Stars | Focus & Pillar | Description |
 | :--- | :--- | :--- |
 | **[Cilium](https://github.com/cilium/cilium)** <br/> [![Cilium Stars](https://img.shields.io/github/stars/cilium/cilium?style=social&color=white)](https://github.com/cilium/cilium/stargazers) | eBPF Kernel Microsegmentation | High-performance open-source networking, observability, and security enforcement built on eBPF. Delivers transparent identity-aware Layer 3 to Layer 7 network security policies and dynamic microsegmentation across Kubernetes clusters. |
 | **[Teleport](https://github.com/gravitational/teleport)** <br/> [![Teleport Stars](https://img.shields.io/github/stars/gravitational/teleport?style=social&color=white)](https://github.com/gravitational/teleport/stargazers) | Identity-Based Infrastructure ZTNA | Open-source Zero Trust Access Plane for SSH, Kubernetes clusters, web applications, and relational databases. Enforces cryptographic identity-based access, automated certificate issuance, and comprehensive session recording. |
@@ -120,7 +120,7 @@ We welcome contributions from cybersecurity practitioners, zero-trust architects
 3. **Add or update entries** in `README.md`:
    - Follow the established markdown table schema.
    - For SaaS tools: ensure starting prices and free tier/trial limits are specific (no generic or placeholder values).
-   - For open-source tools: include the social-styled white star badge linked directly to the stargazers URL.
+   - For open-source tools: include the social-styled white Stars_Badge linked directly to the stargazers URL.
 4. **Test formatting and links**: Verify all markdown renders cleanly without broken anchors.
 5. **Open a Pull Request**: Provide a brief summary of the added solution and its zero-trust relevance.
 
