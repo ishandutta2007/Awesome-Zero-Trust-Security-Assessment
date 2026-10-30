@@ -42,67 +42,18 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 ## SaaS/Hosted Platforms
 
-
-
-- **[CrowdStrike Falcon Zero Trust Assessment](https://www.crowdstrike.com/)**  
-
-  Real-time endpoint security and compliance scoring within Falcon Insight; evaluates over 120 endpoint settings (sensor health, applied policies, OS security) and produces an overall score shareable with Zero Trust ecosystem partners for conditional access enforcement . Supports Windows, macOS, and Linux, with API access for integration into access decisions .
-
-
-
-- **[Microsoft Zero Trust Assessment](https://learn.microsoft.com/en-us/security/zero-trust/assessment/overview)**  
-
-  Open-source PowerShell tool (see open-source section) that also anchors Microsoft's assessment offering; tests hundreds of configuration items across Microsoft 365 and Azure aligned with the Secure Future Initiative and Zero Trust pillars, with remediation guidance in an interactive HTML report .
-
-
-
-- **[Zscaler Zero Trust Exchange](https://www.zscaler.com/)**  
-
-  Cloud-native Zero Trust platform with inline inspection (ZIA), private application access (ZPA), and continuous posture validation; provides telemetry and Risk360 insights to identify control gaps and misconfigurations across cloud and SaaS environments, though formal compliance ownership remains entity-owned . FedRAMP High and StateRAMP authorized for public sector use .
-
-
-
-- **[Palo Alto Networks Zero Trust Posture Center](https://www.paloaltonetworks.com/)**  
-
-  Unified workspace within Strata Cloud Manager that maps NGFW and Prisma Access deployments to Zero Trust 2.0 principles across five dimensions (network configuration, identity, least privilege, inspection, data control); delivers prioritized recommendations with real-time impact analysis and executive reporting with industry comparison .
-
-
-
-- **[Cisco Zero Trust Assessment](https://duo.com/solutions/zero-trust-security)**  
-
-  Duo-driven assessment and enforcement suite covering user trust (phishing-resistant MFA), device trust (posture checks), application access (ZTNA), contextual access (risk-based authentication), and continuous verification; SE Labs independent testing confirmed detection of 30 identity-based attacks . SASE readiness assessments available through partners .
-
-
-
-- **[Illumio Zero Trust](https://www.illumio.com/)**  
-
-  Segmentation-first Zero Trust platform that maps every workload connection in real time and auto-generates policy from observed traffic; enforces least privilege between applications across cloud, containers, endpoints, and data centers without IP-based rules . Assessment is implicit in the visibility-to-policy workflow rather than a separate scoring report.
-
-
-
-- **[BeyondTrust Zero Trust](https://www.beyondtrust.com/)**  
-
-  Privileged Access Management (PAM) as a foundational Zero Trust control; enforces least privilege, removes local admin rights, isolates privileged sessions, and provides audit trails aligned with NIST's seven Zero Trust tenets and CISA guidance . FedRAMP authorized for government use.
-
-
-
-- **[Duo Zero Trust](https://duo.com/)**  
-
-  Cisco's identity-focused Zero Trust solution covering MFA, device trust, adaptive access policies, and continuous session verification; provides a five-phase implementation framework (establish user trust, verify device trust, enable access, enforce contextual access, verify continuously) .
-
-
-
-- **[CyberArk Zero Trust](https://www.cyberark.com/)**  
-
-  Identity security platform integrating with Palo Alto Networks and CrowdStrike to enforce identity-driven Zero Trust access; protects credentials, secrets, and privileged sessions, with integrations that block out-of-compliance endpoints from connecting to IT resources based on Falcon ZTA scores .
-
-
-
-- **[Akamai Zero Trust](https://www.akamai.com/)**  
-
-  Microsegmentation, ZTNA, and FIDO2-compliant MFA for defense and government agencies; emphasizes agentless east-west traffic visibility, private CDN isolation, and API security aligned with the Zero Trust Reference Architecture 2.0 and Executive Order 14028 . FedRAMP authorized.
-
-
+| Product | Description | Starting Pricing | Free Tier / Free Trial Limits |
+| :--- | :--- | :--- | :--- |
+| **[CrowdStrike Falcon Zero Trust Assessment](https://www.crowdstrike.com/)** | Real-time endpoint security and compliance scoring within Falcon Insight; evaluates over 120 endpoint settings (sensor health, applied policies, OS security) and produces an overall score shareable with Zero Trust ecosystem partners for conditional access enforcement. Supports Windows, macOS, and Linux with API access. | **$59.99/device/year** (Falcon Go tier; enterprise packages typically ~$90–$180/device/year) | **15-day free trial**; covers up to 100 devices (includes Falcon Prevent NGAV and USB Device Control). |
+| **[Microsoft Zero Trust Assessment](https://learn.microsoft.com/en-us/security/zero-trust/assessment/overview)** | Automated tenant posture tool testing hundreds of configuration items across Microsoft 365 and Azure against Zero Trust pillars, with remediation guidance in an interactive HTML dashboard. | **Free / $0** (Open-source assessment engine requiring only existing M365/Azure tenant credentials; Entra ID P1/P2 remediation licenses start at $6/user/month) | **Free forever**; unlimited tenant evaluation runs and configuration checks (no user limits on the assessment tool itself). |
+| **[Zscaler Zero Trust Exchange](https://www.zscaler.com/)** | Cloud-native Zero Trust platform with inline inspection (ZIA), private application access (ZPA), and continuous posture validation; provides Risk360 telemetry to identify control gaps across cloud and SaaS environments. FedRAMP High and StateRAMP authorized. | **$72/user/year** (~$6/user/month for entry standalone ZIA/ZPA; combined bundles start at ~$250–$280/user/year) | **30-day proof of concept (PoC)**; evaluation access provisioned through sales engineering for scoped enterprise pilot environments. |
+| **[Palo Alto Networks Zero Trust Posture Center](https://www.paloaltonetworks.com/)** | Unified workspace within Strata Cloud Manager mapping NGFW and Prisma Access deployments across five dimensions (network configuration, identity, least privilege, inspection, data control); delivers prioritized recommendations and real-time impact analysis. | **$110/user/year** (Prisma Access Mobile User Business tier; Strata Cloud Manager Pro add-on priced at ~30% of NGFW estate value) | **30-day guided evaluation / PoC**; evaluation licenses coordinated via sales/reseller console (Prisma Cloud offers instant 30-day self-service trial). |
+| **[Cisco Zero Trust Assessment](https://duo.com/solutions/zero-trust-security)** | Identity-driven assessment and enforcement suite covering phishing-resistant MFA, posture checks, continuous verification, and SASE readiness; validated detection of 30 identity-based attacks in independent SE Labs testing. | **$3/user/month** (Duo Essentials, billed annually; Cisco Secure Access enterprise SSE packages start at ~$15–$25/user/month) | **30-day free trial** (Duo paid plans) or **Duo Free plan** (permanently free up to **10 users** with unlimited app integrations). |
+| **[Illumio Zero Trust](https://www.illumio.com/)** | Segmentation-first Zero Trust platform mapping workload connections in real time and auto-generating least-privilege policy across cloud, containers, endpoints, and data centers. | **$30/workload/year** (typical entry pricing for <1,000 workloads; enterprise minimum contracts typically start at $25,000/year) | **14-day free trial** (Illumio Insights); expires if no cloud flow logs are ingested within the first 7 days, with 30-day data retention. |
+| **[BeyondTrust Zero Trust](https://www.beyondtrust.com/)** | Privileged Access Management (PAM) enforcing least privilege, removing local admin rights, isolating privileged sessions, and auditing activity against NIST/CISA Zero Trust tenets. FedRAMP authorized. | **$40/endpoint/year** (BeyondTrust Endpoint Privilege Management entry tier, typically under 1,000–asset contracts) | **14-day free trial** (Privileged Remote Access / Remote Support); Endpoint Privilege Management provided via guided enterprise PoC. |
+| **[Duo Zero Trust](https://duo.com/)** | Cisco's identity-focused Zero Trust solution covering MFA, device trust, adaptive access policies, and continuous session verification across a five-phase implementation framework. | **$3/user/month** (Duo Essentials tier; Duo Advantage is $6/user/month, Duo Premier is $9/user/month) | **Free forever for up to 10 users** (Duo Free plan: MFA, Duo Mobile push, unlimited application integrations; no device trust or SSO). |
+| **[CyberArk Zero Trust](https://www.cyberark.com/)** | Identity security platform integrating with Palo Alto Networks and CrowdStrike to enforce identity-driven Zero Trust access; protects credentials, secrets, and privileged sessions, blocking out-of-compliance endpoints. | **$2/user/month** (CyberArk Identity Workforce SSO/MFA tier; CyberArk Privilege Cloud PAM starts at ~$2,400/privileged user/year) | **14-day free trial** (CyberArk Identity sandbox / virtual training tenant; enterprise PAM evaluated via structured vendor PoC). |
+| **[Akamai Zero Trust](https://www.akamai.com/)** | Microsegmentation (Guardicore), ZTNA (Enterprise Application Access), and FIDO2-compliant MFA; emphasizes agentless east-west traffic visibility and API security aligned with Executive Order 14028. FedRAMP authorized. | **$10/user/month** (~$120/user/year for Enterprise Application Access ZTNA; Guardicore priced per workload/server) | **60-day free trial** (Enterprise Application Access ZTNA trial provisioned via partner/sales onboarding request). |
 
 ## Open-Source GitHub Projects
 
